@@ -1,0 +1,19 @@
+
+|
+java:S1845C"_Rename method "btnValidation" to prevent any misunderstanding/clash with field "btnValidation".(®‰í8Ûñ Œİ1
+o	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãë®Œşÿÿÿÿ8ãñ Œİ1
+o	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£´’©ùÿÿÿÿ8ãñ Œİ1
+o	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿Çú¤şÿÿÿÿ8åñ Œİ1
+o	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨šÌ‡ûÿÿÿÿ8åñ Œİ1
+o	java:S100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÀşËûÿÿÿÿ8æñ Œİ1
+j	java:S100c"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”¹ÈÄ8çñ Œİ1
+o	java:S100i"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ†ëÓüÿÿÿÿ8éñ Œİ1
+o	java:S100o"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ™Ë¢şÿÿÿÿ8êñ Œİ1
+j	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€üÈÙ8ëñ Œİ1
+j	java:S100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç˜úì8ìñ Œİ1
+k	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¤êß8îñ Œİ1
+p	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùİö¤şÿÿÿÿ8ğñ Œİ1
+p	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îşà¼ÿÿÿÿÿ8ññ Œİ1
+c
+java:S1128
+"ARemove this unused import 'org.hamcrest.Matchers.containsString'.(ÀÈÕúÿÿÿÿ8‚½ªŒİ1

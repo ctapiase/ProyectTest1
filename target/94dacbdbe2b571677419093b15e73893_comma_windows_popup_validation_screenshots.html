@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">BaseServiciosScreenPlay</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="57041a44374cd5a5c37f8c3722a5ca67_l_features_sl_popup_validation.html">Formulario Popup Validation</a></span>
+                > <span class="truncate-60"><a
+                    href="94dacbdbe2b571677419093b15e73893_comma_windows_popup_validation.html">Diligenciamiento exitoso del formulario Popup Validation, no se presenta ningun mensage de validacion </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="d782c44557441225cc92a5e35bf4b23b_requirement_type_feature.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-02-2024 15:03</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Formulario Popup Validation </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario<br />
+Quiero ingresar al formulario<br />
+Para realizar validaciones de obligatoriedad
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="b587a0a9274f8b6e3d8e0bb0ae8cb9bf_context_chrome.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="a396efb27cdfe5a722be3d67da3e0319_context_windows.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="90b10304d9f7ccdecec6a6c10a2b8ded_duration_30_to_60_seconds.html">30 To 60 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="e54337ba32bd5d52b2c4a3afe4819b97_context_chrome_c__windows.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="ef100822d7f3eab65498e1f88bf7d7a5_tag_autenticacion.html">Autenticacion
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Diligenciamiento exitoso del formulario Popup Validation, no se presenta ningun mensage de validacion
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f6e3511d68f2aad8381dc891797a1f112874a03464f641cbaaf118151bcd0846.png" title=" Given Me autentico en colorlib con usuario &quot;demo&quot; y clave &quot;demo&quot;" width="0"/>
+                <img src="f6e3511d68f2aad8381dc891797a1f112874a03464f641cbaaf118151bcd0846.png" title=" Login colorlib: demo, demo" width="0"/>
+                <img src="f6e3511d68f2aad8381dc891797a1f112874a03464f641cbaaf118151bcd0846.png" title=" Given Me autentico en colorlib con usuario &quot;demo&quot; y clave &quot;demo&quot; (completed)" width="0"/>
+                <img src="f45429abd7c6718b23c6dfea7301125e11ad865e6f567d6d30c829aadcd7e75a.png" title=" And Ingreso a la funcionalidad Forms Validation" width="0"/>
+                <img src="f45429abd7c6718b23c6dfea7301125e11ad865e6f567d6d30c829aadcd7e75a.png" title=" Ingresar form validation" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" Ingresar form validation (completed)" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" And Ingreso a la funcionalidad Forms Validation (completed)" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" When Diligencio el formulario Popup Validation
+| Required | Select | MultipleSelect | MultipleSelect2 | Url | E-mail | Password | Confirm Password | Minimum field size | Maximum field size | Number | IP | Date | Date Earlier |
+| valor | Tennis | Golf | Football | http://url.com | email@email.com | password | password | 234564 | 1234 | -343.878 | 192.168.3.99 | 2024-02-21 | 2011-11-11 |" width="0"/>
+                <img src="7481821113cf6913e09056ab44157b25792fcf1a2248d5d756397638df84a228.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="dc6c1d2c2357a292a6cb36497e2ff885e2a79de734b0e86bd3ab798222193089.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="549dc7bd77a90d1c184df53edeef0fc64abc4fb6423e01665679ff79bf85e2a7.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="eeb6e32fa9183be679535265c0d8905fdd0d2c1eb6eeb27f3ab1d9cc1c44010c.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="aa59680aaf2402b0213657d318c6f38375747a0ce2b6bf36a170a021c8ccfab9.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="0b04c8679de3724f05215b11cd1272478f8dc9d8c80fe908acd0d6c200ac576e.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="632285aa5f22da98f2bcad55353bd367ee12798f94df649fea6a7fdebe8b01e1.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="c5b712a45ff072167714a3f22799d08c52a26aa142c002b59c16e73e236264a5.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="8512ee7a72be3e667968e954266bd0da0b64b9f90cde4cc9c19094ad415a49e5.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="7f8258f4884ef725fac03f9eaa4e9e23b2a4b00f8fdc9af761f71195fdd805f4.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="f96bc562bc0ccbed04b97008d043a0ef7df8e4b740030b59d655c848ed758488.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="b0fd67fb4929b74c6ad0e234328cb98a88d90ad74939d3eb72c5033836c26176.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="9ed213f326b6e10e430420b1b4d1a68e129fd9ec7ab80b34a0f925a5b421bb16.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="117c49865195cee5f7f7321b63fa9c4360dd0ad3a44c23fa20491d662f04689a.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="8881b95130cfd99909b56a3cd99a042f67fadc88fc5fa922660f81e9f9c24f09.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" Diligenciar popup datos tabla: [[Required, Select, MultipleSelect, MultipleSelect2, Url, E-mail, Password, Confirm Password, Minimum field size, Maximum field size, Number, IP, Date, Date Earlier], [valor, Tennis, Golf, Football, http://url.com, email@email.com, password, password, 234564, 1234, -343.878, 192.168.3.99, 2024-02-21, 2011-11-11]], 1 (completed)" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" Then Verifico el ingreso eXitoso" width="0"/>
+                <img src="e0a825402f948264290b80698c3d7924d0352215c8af9a6d8563b9eaedf8dea8.png" title=" Diligenciar form sin errores: <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.9.8</span>
+</div>
+</body>
+</html>

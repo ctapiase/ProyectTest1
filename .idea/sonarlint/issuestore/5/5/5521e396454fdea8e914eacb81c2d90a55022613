@@ -1,0 +1,9 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑŠþø8ŒÇ¶ŒÝ1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑŠþø8ŒÇ¶ŒÝ1
+x	java:S116"\Rename this field "ColorLibLoginPage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€·¹¿8©Ç¶ŒÝ1
+w	java:S116"[Rename this field "ColorlibMenuPage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´½Û±8©Ç¶ŒÝ1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑŠþø8«Ç¶ŒÝ1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ñû«ûÿÿÿÿ8¬Ç¶ŒÝ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ôòþ“Ý1
